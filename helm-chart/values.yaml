@@ -1,0 +1,20 @@
+replicaCount: 3
+
+image:
+  repository: ybtamiru/devops-php-todo-helm
+  tag: "1.0"
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30081
+
+mysql:
+  image: mysql:8.4
+  database: taskdb
+  user: todo_user
+
+redis:
+  image: redis:7
+  port: 6379

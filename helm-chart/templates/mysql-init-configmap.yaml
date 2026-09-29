@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-init
+  labels:
+    app.kubernetes.io/name: mysql
+    app.kubernetes.io/component: database
+
+data:
+  taskdb.sql: |
+{{ .Files.Get "files/taskdb.sql" | indent 4 }}
