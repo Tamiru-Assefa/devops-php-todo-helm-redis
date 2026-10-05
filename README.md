@@ -1,10 +1,10 @@
-# 🚀 Kubernetes + Helm + Jenkins + Redis — PHP Todo Application
+#  Kubernetes + Helm + Jenkins + Redis — PHP Todo Application
 
 A production-style DevOps project demonstrating how to containerize, deploy, automate, and monitor a PHP Todo application using **Docker, Kubernetes, Helm, Jenkins, Redis, MySQL, and Prometheus/Grafana**.
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 
 The goal of this project is to build an automated Kubernetes-based deployment environment for a PHP Todo application.
 
@@ -35,12 +35,12 @@ The project also demonstrates Kubernetes best practices such as:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ![img](ScreenShots/Architecture.jpg)
 ---
 
-## ⚡ Application Request Flow
+##  Application Request Flow
 
 Redis is used as a caching layer between the PHP application and MySQL.
 
@@ -71,7 +71,7 @@ This reduces repeated database queries when the requested data is already availa
 
 ---
 
-# 🧰 Technology Stack
+#  Technology Stack
 
 | Component          | Technology         |
 | ------------------ | ------------------ |
@@ -95,7 +95,7 @@ This reduces repeated database queries when the requested data is already availa
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```text
 devops-php-todo-helm-redis/
@@ -138,7 +138,7 @@ devops-php-todo-helm-redis/
 
 ---
 
-# ☁️ Environment Setup
+#  Environment Setup
 
 The project can run locally or on an AWS-based environment.
 
@@ -204,7 +204,7 @@ Then configure the Kubernetes environment and deploy the project.
 
 ---
 
-# 🚀 Deployment
+#  Deployment
 
 Clone the repository:
 
@@ -238,7 +238,7 @@ kubectl get services -n devops-todo-helm
 
 ---
 
-# 🔄 CI/CD Pipeline
+#  CI/CD Pipeline
 
 Jenkins automates the deployment process.
 
@@ -272,7 +272,7 @@ ybtamiru/devops-php-todo-helm:3
 
 ---
 
-# 📊 Monitoring
+#  Monitoring
 
 The monitoring stack runs in a separate Kubernetes namespace:
 
@@ -321,7 +321,7 @@ http://localhost:3000
 
 ---
 
-# 🔐 Security
+#  Security
 
 The project uses Kubernetes Secrets for sensitive database credentials instead of storing passwords directly inside `values.yaml`.
 
@@ -337,7 +337,7 @@ should never be committed to GitHub.
 
 ---
 
-# ❤️ Health Checks
+#  Health Checks
 
 The PHP application includes Kubernetes:
 
@@ -353,7 +353,7 @@ This allows Kubernetes to automatically manage unhealthy application instances.
 
 ---
 
-# 📈 Scalability
+#  Scalability
 
 The PHP application runs with three replicas:
 
@@ -369,7 +369,7 @@ Redis provides caching, while MySQL uses persistent storage through a Kubernetes
 
 ---
 
-# 🎓 What This Project Demonstrates
+#  What This Project Demonstrates
 
 This project demonstrates practical knowledge of:
 
@@ -395,7 +395,7 @@ This project demonstrates practical knowledge of:
 
 ---
 
-# 🔮 Future Enhancement
+#  Future Enhancement
 
 The core project is complete.
 
@@ -415,7 +415,7 @@ This would remove the need to manually trigger the Jenkins pipeline after every 
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 **Tamiru Assefa**
 
